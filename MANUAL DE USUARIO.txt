@@ -1,0 +1,35 @@
+Manual de Usuario:
+
+Al entrar en la aplicación, lo primero que tendrás que hacer es registrarte, para acceder
+a esta pantalla tendrás que seleccionar "Signup" en el menu superior de la aplicación.
+Luego tendrás que conectarte pulsando en el icono de la puerta en la esquina superior
+derecha. 
+
+Si eres el primer usuario que se conecta, por defecto eres administrador, el resto
+de usuarios no serán administrador a menos que se lo edites en la pantalla de menú 
+del admin. Solo si eres admin verás esta pantalla. En esta pantalla podrás añadir
+usuarios con el botón "+" que aparecerá en la tabla, esto pasará en todas las tablas
+de la aplicación menos en la de supplier y price reduction que están puestas por
+defecto .
+
+Con estos insert se rellenara las dos tablas
+
+En la sección de item podrás añadir item. Tendrás dos botones, uno para editar y 
+otro para eliminar. En editar le podras añadir supplier y price reduction. Está
+implementado para que no se añada dos fechas que se solapen por parte de los 
+price reduction. Tendrás que añadir valores a las tablas supplier y price reduction si quieres
+ver esos valores. Por ejemplo:
+
+
+
+INSERT INTO PRICEREDUCTION( ID, ENDDATE, REDUCEDPRICE, STARTDATE) VALUES (1, '2006-10-19 10:23:54', 55, '2004-10-19 10:23:54'); 
+INSERT INTO PRICEREDUCTION( ID, ENDDATE, REDUCEDPRICE, STARTDATE) VALUES (2, '2003-10-19 10:23:54', 55, '2002-10-19 10:23:54'); 
+
+INSERT INTO PRICEREDUCTION( ID, ENDDATE, REDUCEDPRICE, STARTDATE) VALUES (3, '2014-10-19 10:23:54', 55, '2009-10-19 10:23:54'); 
+INSERT INTO PRICEREDUCTION( ID, ENDDATE, REDUCEDPRICE, STARTDATE) VALUES (4, '2005-10-19 10:23:54', 55, '2004-10-19 10:23:54'); 
+INSERT INTO SUPPLIER(ID,COUNTRY,NAME) VALUES (1,'ESPAÑA','IBERDROLA');
+INSERT INTO SUPPLIER(ID,COUNTRY,NAME) VALUES (2,'ESPAÑA','IBERDROLA');
+INSERT INTO SUPPLIER(ID,COUNTRY,NAME) VALUES (3,'ESPAÑA','IBERDROLA');
+
+Con esto se comprobaría que va bien la implementación de las fechas solapadas. Para 
+desconectarse es lo mismo que iniciar sesión, el boton superior derecho para hacerlo.
