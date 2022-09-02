@@ -17,8 +17,10 @@ Con estos insert se rellenara las dos tablas
 En la sección de item podrás añadir item. Tendrás dos botones, uno para editar y 
 otro para eliminar. En editar le podras añadir supplier y price reduction. Está
 implementado para que no se añada dos fechas que se solapen por parte de los 
-price reduction. Tendrás que añadir valores a las tablas supplier y price reduction si quieres
-ver esos valores. Por ejemplo:
+price reduction. A parte, en la tabla de items se podra ordenadr por estado. Habrá
+tres iconos, uno que ordenara según si es activo o no, y el otro pondrá todos los items
+en la tabla independientemente de su estado. Tendrás que añadir valores a las tablas
+supplier y price reduction si quieres ver esos valores. Por ejemplo:
 
 
 
